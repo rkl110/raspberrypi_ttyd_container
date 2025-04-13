@@ -1,0 +1,13 @@
+[Unit]
+Description=My ttyd Service
+After=network.target
+
+[Service]
+Type=simple
+User=admina
+WorkingDirectory=/home/admina/Docker-Debian
+ExecStart=/home/admina/Docker-Debian/run-loop.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
