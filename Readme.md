@@ -13,3 +13,5 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now podman_ttyd.service
 
 sudo loginctl enable-linger admina
+
+Credits to: https://github.com/colinmurphy1/docker-ttyd
